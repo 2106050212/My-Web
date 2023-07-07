@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>三杀良心商城</title>
+  <style>
+    /* Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Header */
+    header {
+      padding: 10px;
+      color: black;
+      text-align: center;
+    }
+    body {
+      background-color: #fff;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    /* Navigation */
+    nav {
+      background-color: #333;
+      padding: 10px;
+      color: #fff;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    /* Main Content */
+    .container {
+      width: 69%;
+      max-height: 500px;
+      margin: 0 auto;
+      overflow: scroll;
+      display:inline-block;
+    }
+    .container img {
+      height: 100px;
+    }
+    .container1 {
+      width: 30%;
+      height: 500px;
+      padding: 5px auto;
+      margin: 0 auto;
+      padding:0 auto;
+      overflow: scroll;
+      display:inline-block;
+    }
+    .container1 li{
+      padding: 10px;
+      font-size: 20px;
+    }
+    /* Footer */
+    footer {
+      background-color: #333;
+      padding: 10px;
+      color: #fff;
+      text-align: center;
+    }
+    .box {
+      min-height: 80px;
+      max-height: 100px;
+    }
+    .box img {
+      height: 100px;
+    }
+    .box a{
+      text-decoration: none;
+      color: #333
+    }
+    #shuRuKuang {
+      border: 0;
+      border-bottom: 2px solid #fff;
+      padding: 4px 2px;
+      /* display: block; */
+      background: 0;
+      line-height: 1.5;
+      outline: none;
+      text-align: center;
+      transition: border-color 0.2s ease-in-out;
+      border-radius: 0;
+      color: #fff;
+      font-size: 2rem;
+      max-width: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="box">
+      <!-- <h1>小商品市场</h1> -->
+      <a href="index.html">
+      <img src="https://dow.ayxz.com/static/002/xinwen/img/20220718/154022_20220718132307_66185.png" alt="小商品市场">
+      </a>
+      <a href="login.html">登录</a>
+      还没有账号？点击<a href="register.html">注册</a>
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">首页</a></li>
+      <li><a href="#">武将</a></li>
+      <li><a href="#">银两</a></li>
+      <li><a href="#">元宝</a></li>
+      <li><a href="#">充值</a></li>
+    </ul>
+  </nav>
+
+  <div>
+  <div class="container1">
+    <script>
+        let style = `<ul>`;
+        for(let i = 1; i <= 10; i++) {
+        style = style.concat(`<li>Style ${i}</li>`);
+        }
+        style = style.concat(`</ul>`);
+        console.log(style);
+        document.write(style);
+    </script>
+  </div>
+  <div class="container">
+    <h2>热门武将</h2>
+    <script>
+      let product;
+      for(let j = 1; j <= 10; j++) {
+      product = `<img src="image/大宝.jpg" alt="Product ${j}"><br><p>阳光开朗大男孩</p><button>购买</button><br>`;
+      document.write(product);
+      }
+    </script>
+  </div>
+  </div>
+
+  <footer>
+    <p>版权所有 &copy; 2023 Tu</p>
+  </footer>
+  <script src="index.js"></script>
+</body>
+
+</html>
